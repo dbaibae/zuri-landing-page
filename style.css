@@ -1,0 +1,87 @@
+/*
+* Setting my defaults 
+ */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: Averta, sans-serif;
+}
+
+/* 
+? Styling section.header
+ */
+
+.head {
+  background: url(https://zuri.team/img/hero-bg.svg) no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.head-container{
+
+  width: 70vw;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.head-container img{
+  margin-bottom: 20px;
+  width: 80px;
+  height: 80px;
+
+
+}
+
+
+
+.head-container-text{
+  text-align: center;
+
+}
+.head-container-text h3 {
+  padding: 10px;
+  font-size: 20px;
+  color: #514949;
+
+}
+.head-container-text p {
+    width: 80%;
+    margin: 30px auto 15px auto;
+  padding: 10px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #514949;
+
+}
+.head-container-text p span {
+  color: rgb(221, 41, 41);
+}
+
+
+.head-container-button{
+display: flex;
+margin-top: 10px;
+}
+
+.button{
+
+    padding: 10px 15px;
+    border:  rgb(231, 54, 54) solid 1px;
+    margin: 5px 10px 5px 10px;
+    font-size: 12px;
+    color:  rgb(231, 54, 54);
+}
+#left{
+    background-color:   rgb(231, 54, 54);
+    color: white;
+}
+#left:hover{
+    color: rgb(231, 54, 54);
+    background: transparent no-repeat;
+}
