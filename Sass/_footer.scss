@@ -1,0 +1,11 @@
+@import 'variables';
+@import 'mixins';
+
+
+footer{
+    height: 25vh;
+    text-align: center;
+    p{
+        font-weight: bold;
+    }
+}
