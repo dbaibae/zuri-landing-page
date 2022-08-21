@@ -1,0 +1,159 @@
+@import 'variables';
+@import 'mixins';
+
+.middle{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+
+    .top  {
+        text-align: center;
+        h3{
+            font-size: $font-small;
+            margin: 8.5rem 0 1rem 0;
+            color: $red;
+        }
+        
+        p {
+            font-size: $font-middle;
+            line-height: 2.4rem;
+            margin: 1rem 0 5rem 0;
+        }
+            
+    }
+    
+    .relative {
+        img{
+            position: absolute;
+            height: 30rem;
+            width: 30rem;
+            z-index: -1;
+
+            &#lt{
+                left: -10rem;
+                top: 147vh;
+            }
+            
+            
+            &#rt{
+                top: 147vh;
+                right: -10rem;
+            }
+
+        }
+    
+    }
+    
+    .middle {
+
+        display: flex;
+        flex-direction: column;
+
+        #container {
+            display: flex;
+            
+            .inner{
+                padding: 0 1rem;
+                max-width: 33.3%;
+                .resize{
+                    background: $pink;
+                    padding: 4rem 2.5rem;
+                    
+
+                    .text{
+                        margin-top: 2rem;
+                        line-height: 1.75rem;
+                        min-height: 15rem;
+                    }
+
+                    .footer{
+                        margin-top: 1rem;
+                        color: $red;
+
+                    }
+                
+                }
+            
+            
+            }
+        
+            margin-bottom: 5rem;
+        
+        }
+        
+   
+        .bottom{
+            margin: 2rem 3rem;
+            display: flex;
+            justify-content: space-around;
+            height: 15vh;
+
+            .logo{
+
+            }
+
+            .link{
+                @include flexColumn(column, space-between);
+
+                a{
+                    text-decoration: none;
+                    p{
+                        color: $red;
+                    }
+                }
+
+            }
+
+            .contact{
+                @include flexColumn(column, space-between);
+
+
+                #email{
+                    a{
+                        text-decoration: none;
+                        font-size: $font-small;
+                        color: $red;
+                        
+                    }
+                }
+            }
+
+            .follow-us{
+                display: flex;
+                flex-direction: column;
+                width: 7rem;
+                p{
+                    display: flex;
+                    justify-content: space-between;
+                    
+
+                    a{
+                        margin-top: 1rem;
+
+
+                        img{
+
+                            width: 1.25rem;
+                            height: 1.25rem;
+                        }
+                    }
+                }
+
+
+            }
+
+
+
+    
+        }
+        
+    }
+
+    hr{
+        width: 90%;
+        margin: 0 auto;
+        background: lighten($color: $dark, $amount: 50%);
+        height: .1rem;
+        border: none;
+    }
+}
