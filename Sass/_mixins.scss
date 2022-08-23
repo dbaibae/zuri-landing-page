@@ -10,26 +10,26 @@
 
 
 @mixin media-small {
-    @media screen and (max-width: 1000px) {
+    @media (max-width: 1000px) {
         @content;
     }
 }
 @mixin media-md {
-    @media screen and (max-width: 1200px) {
+    @media (max-width: 1200px) {
         @content;
     }
 }
 
 @mixin media-xsmall {
 
-    @media screen and (max-width: 660px) {
+    @media (max-width: 660px) {
         @content;
         
     }
 }
 @mixin media-mobile {
 
-    @media screen and (max-width: 400px) {
+    @media (max-width: 400px) {
         @content;
         
     }
